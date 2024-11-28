@@ -22,6 +22,9 @@ module.exports = {
       },
     },
     extend: {
+      boxShadow: {
+        'bxs-c': '14px 14px 13px -1px rgba(212,212,212,1)',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -73,6 +76,7 @@ module.exports = {
         },
       },
       animation: {
+        'card-hover': ' translate-y-10',
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
       },

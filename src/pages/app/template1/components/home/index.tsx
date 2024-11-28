@@ -23,8 +23,10 @@ export function Home({ couple }: HomeProps) {
       >
         <Header />
 
-        <div className="flex h-[100vh] flex-col items-center justify-center text-white">
-          <h1 className="font-normal">{couple.event_date}</h1>
+        <div className="flex h-[100vh] flex-col items-center justify-center gap-4 text-white">
+          <h1 className="font-vbs text-7xl -tracking-tighter">
+            {couple.wife.name} & {couple.husband.name}
+          </h1>
           <div className="flex w-96 flex-col items-center justify-center">
             <div className="flex gap-2">
               <div className="flex h-20 w-20 flex-col items-center justify-center rounded-xl border-[2px] border-stone-200">

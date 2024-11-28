@@ -1,15 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 
-export function Counter (eventDate: string) {
+export function Counter(eventDate: string) {
   const calculateTimeLeft = () => {
-    const difference = new Date(eventDate).getTime() - new Date().getTime();
+    const difference = new Date(eventDate).getTime() - new Date().getTime()
 
     let timeLeft = {
       days: 0,
       hours: 0,
       minutes: 0,
       seconds: 0,
-    };
+    }
 
     if (difference > 0) {
       timeLeft = {
@@ -17,22 +17,21 @@ export function Counter (eventDate: string) {
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60),
-      };
+      }
     }
 
-    return timeLeft;
-  };
+    return timeLeft
+  }
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
+      setTimeLeft(calculateTimeLeft())
+    }, 1000)
 
-    return () => clearTimeout(timer);
-  }, [timeLeft, eventDate]);
+    return () => clearTimeout(timer)
+  }, [timeLeft, eventDate])
 
-  return timeLeft;
+  return timeLeft
 }
-

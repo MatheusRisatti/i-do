@@ -26,6 +26,7 @@ export const couples = {
       event_intro,
       event_img,
       event_loc,
+      event_date,
       wife:people!couples_wife_fkey(id, name, bio, image),
       husband:people!couples_husband_fkey(id, name, bio, image)
     `

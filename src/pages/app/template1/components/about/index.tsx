@@ -1,5 +1,6 @@
 import { Couple } from '@/@types/couple'
-import divider from '@/assets/img/divider.svg'
+
+import { SectionTitle } from '../section-title'
 
 interface AboutProps {
   couple: Couple
@@ -8,24 +9,30 @@ interface AboutProps {
 export function About({ couple }: AboutProps) {
   return (
     <>
-      <div className="about">
-        <div className="about-title">
-          <img className="w-96 rotate-180" src={divider} alt="" />
-          <h1>Sobre os Noivos</h1>
-          <img className="mb-12 w-96" src={divider} alt="" />
+      <div className="mt-28 w-full">
+        <div className="mb-5 flex w-full flex-col items-center justify-center">
+          <SectionTitle title={'Sobre Nós'} />
         </div>
-        <div className="about-content">
-          <div className="about-couple">
-            <img src={couple.wife.image} alt="" />
-            <div className="about-text">
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center justify-center gap-14">
+            <img
+              src={couple.wife.image}
+              className="h-40 w-40 rounded-[400px]"
+              alt=""
+            />
+            <div className="w-[700px] font-ppns">
               <p>{couple.wife.bio}</p>
             </div>
           </div>
-          <div className="about-couple">
-            <div className="about-text">
+          <div className="flex items-center justify-center gap-14">
+            <div className="w-[700px] font-ppns">
               <p>{couple.husband.bio}</p>
             </div>
-            <img src={couple.husband.image} alt="" />
+            <img
+              src={couple.husband.image}
+              className="h-40 w-40 rounded-[400px]"
+              alt=""
+            />
           </div>
         </div>
       </div>
