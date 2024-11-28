@@ -9,6 +9,11 @@ module.exports = {
   ],
   prefix: '',
   theme: {
+    fontFamily: {
+      rds: ['Redressed'],
+      ppns: ['Poppins'],
+      vbs: ['Great Vibes'],
+    },
     container: {
       center: true,
       padding: '2rem',
