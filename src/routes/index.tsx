@@ -1,7 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 
-import { CouplePage } from '@/pages/admin/couple'
-import { DashboardPage } from '@/pages/admin/dashboard'
+import { Menu } from '@/pages/app/menu'
 import { TemplatePage } from '@/pages/app/template'
 
 export const router = createBrowserRouter([
@@ -10,12 +9,8 @@ export const router = createBrowserRouter([
     element: <TemplatePage />,
   },
   {
-    path: '/admin',
-    element: <DashboardPage />,
-  },
-  {
-    path: '/admin/couple',
-    element: <CouplePage />,
+    path: '/',
+    element: <Menu />,
   },
   {
     path: '*',
