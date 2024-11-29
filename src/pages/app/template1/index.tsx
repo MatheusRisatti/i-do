@@ -1,12 +1,13 @@
 import { Couple } from '@/@types/couple'
 
-import { About } from './components/about'
-import { Confirm } from './components/confirm'
-import { Footer } from './components/footer'
-import { Gift } from './components/gift'
-import { Home } from './components/home'
-import { Location } from './components/location'
-import { Message } from './components/message'
+import { About } from '../components/about'
+import { Confirm } from '../components/confirm'
+import { Footer } from '../components/footer'
+import { Gift } from '../components/gift'
+import { Home } from '../components/home'
+import { Location } from '../components/location'
+import { Message } from '../components/message'
+import { UpButton } from '../components/up-button'
 
 interface Template1Props {
   couple: Couple
@@ -21,6 +22,7 @@ export function Template1({ couple }: Template1Props) {
         <Home couple={couple} />
         <About couple={couple} />
         <Gift gifts={couple.gifts} />
+        <UpButton />
         <Message />
         <Confirm />
         <Location />
