@@ -9,7 +9,7 @@ interface AboutProps {
 export function About({ couple }: AboutProps) {
   return (
     <>
-      <div className="mt-28 w-full" id='abt'>
+      <div className="mt-28 w-full" id="abt">
         <div className="mb-5 flex w-full flex-col items-center justify-center">
           <SectionTitle title={'Sobre Nós'} />
         </div>

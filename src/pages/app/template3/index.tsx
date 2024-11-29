@@ -13,16 +13,16 @@ interface Template1Props {
   couple: Couple
 }
 
-export function Template1({ couple }: Template1Props) {
+export function Template3({ couple }: Template1Props) {
   console.log(couple)
 
   return (
     <>
       <div className="bg-amber-50">
         <Home couple={couple} />
-        {/* <UpButton /> */}
         <About couple={couple} />
         <Gift gifts={couple.gifts} />
+        <UpButton />
         <Message />
         <Confirm />
         <Location />

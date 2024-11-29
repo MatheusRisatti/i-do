@@ -6,7 +6,7 @@ import {
   PopoverTrigger,
 } from '@/components/ui/popover'
 
-import { MenuSection } from '../components/menu-section'
+import { MenuSection } from './components/menu-section'
 
 export function Menu() {
   return (
