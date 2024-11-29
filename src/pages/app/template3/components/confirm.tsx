@@ -6,7 +6,10 @@ import { Label } from '@/components/ui/label'
 export function Confirm() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center" id='cnfrm'>
+      <div
+        className="flex h-[700px] flex-col items-center justify-center bg-[#171717]"
+        id="cnfrm"
+      >
         <div className="flex w-[35rem] flex-col items-center justify-center">
           <h1 className="mb-12 mt-24 font-vbs text-5xl">Confirmar Prenseça</h1>
 
@@ -24,12 +27,12 @@ export function Confirm() {
 
             <div className="flex w-full flex-col items-start justify-start gap-3">
               <div className="flex w-12 items-center gap-1">
-                <Checkbox id="yes" />
+                <Checkbox id="yes" className="border-[#B7A9A7]" />
                 <Label htmlFor="yes">Sim</Label>
               </div>
 
               <div className="flex w-12 items-center gap-1">
-                <Checkbox id="no" />
+                <Checkbox id="no" className="border-[#B7A9A7]" />
                 <Label htmlFor="no">Não</Label>
               </div>
             </div>

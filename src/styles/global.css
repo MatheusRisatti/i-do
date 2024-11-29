@@ -69,4 +69,6 @@
   }
 }
 
-
+* {
+  box-sizing: border-box;
+}

@@ -9,7 +9,10 @@ interface GiftProps {
 
 export function Gift({ gifts }: GiftProps) {
   return (
-    <div className="mb-8 mt-40 flex items-center justify-center" id='gft'>
+    <div
+      className="flex items-center justify-center bg-[#232121] py-32"
+      id="gft"
+    >
       <div className="flex w-full flex-col items-center justify-center">
         <div className="gift-title">
           <SectionTitle title="Presentes" />

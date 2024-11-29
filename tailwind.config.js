@@ -23,7 +23,7 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        'bxs-c': '14px 14px 13px -1px rgba(212,212,212,1)',
+        card: '  3px 3px 10px -1px rgba(140,140,140)',
       },
       colors: {
         border: 'hsl(var(--border))',

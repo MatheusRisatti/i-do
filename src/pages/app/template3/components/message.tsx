@@ -5,9 +5,12 @@ import { Textarea } from '@/components/ui/textarea'
 export function Message() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center" id='msg'>
+      <div
+        className="flex flex-col items-center justify-center bg-[#171717]"
+        id="msg"
+      >
         <div className="flex w-[50rem] flex-col items-center justify-center">
-          <h1 className="font-vbs mb-12 mt-24 text-5xl">
+          <h1 className="mb-12 mt-24 font-vbs text-5xl">
             Mande sua mensagem para os noivos
           </h1>
 

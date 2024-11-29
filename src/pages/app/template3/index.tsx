@@ -8,6 +8,7 @@ import { Home } from './components/home'
 import { Location } from './components/location'
 import { Message } from './components/message'
 import { UpButton } from './components/up-button'
+import { Welcome } from './components/welcome'
 
 interface Template1Props {
   couple: Couple
@@ -18,13 +19,14 @@ export function Template3({ couple }: Template1Props) {
 
   return (
     <>
-      <div className="bg-amber-50">
+      <div className="bg-[#171717] text-[#B7A9A7]">
         <Home couple={couple} />
+        <Welcome couple={couple} />
         <About couple={couple} />
-        <Gift gifts={couple.gifts} />
-        <UpButton />
         <Message />
         <Confirm />
+        <Gift gifts={couple.gifts} />
+        {/* <UpButton /> */}
         <Location />
         <Footer />
       </div>

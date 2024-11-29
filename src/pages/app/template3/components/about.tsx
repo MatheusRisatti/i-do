@@ -9,8 +9,11 @@ interface AboutProps {
 export function About({ couple }: AboutProps) {
   return (
     <>
-      <div className="mt-28 w-full" id="abt">
-        <div className="mb-5 flex w-full flex-col items-center justify-center">
+      <div
+        className="mt-28 flex h-screen w-full flex-col items-center justify-center bg-[#232121]"
+        id="abt"
+      >
+        <div className="-mt-10 mb-5 flex w-full flex-col items-center justify-center">
           <SectionTitle title={'Sobre Nós'} />
         </div>
         <div className="flex flex-col gap-4">

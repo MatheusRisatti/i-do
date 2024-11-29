@@ -1,4 +1,4 @@
-import divider from '@/assets/img/divider.svg'
+import divider from '@/assets/img/t3dvdr.svg'
 
 interface SectionTitleProps {
   title: string
