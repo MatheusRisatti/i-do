@@ -6,9 +6,9 @@ import { Label } from '@/components/ui/label'
 export function Confirm() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center" id='cnfrm'>
+      <div className="flex flex-col items-center justify-center" id="cnfrm">
         <div className="flex w-[35rem] flex-col items-center justify-center">
-          <h1 className="mb-12 mt-24 font-vbs text-5xl">Confirmar Prenseça</h1>
+          <h1 className="mb-12 mt-24 font-rds text-5xl">Confirmar Prenseça</h1>
 
           <div className="flex w-full items-center justify-center">
             <Input className="mr-12 w-64" placeholder="Nome(s)" />
@@ -19,8 +19,8 @@ export function Confirm() {
             />
           </div>
 
-          <div className="ml-2 mt-4 flex w-full flex-col items-start justify-center gap-2">
-            <h3 className="font-ppns">Padrinho ?</h3>
+          <div className="mb-5 ml-2 mt-4 flex w-full flex-col items-start justify-center gap-2">
+            <h3 className="font-rds text-2xl">Padrinho ?</h3>
 
             <div className="flex w-full flex-col items-start justify-start gap-3">
               <div className="flex w-12 items-center gap-1">

@@ -18,7 +18,7 @@ export function Template2({ couple }: Template1Props) {
 
   return (
     <>
-      <div className="bg-amber-50">
+      <div className="bg-[#F7F4E4]">
         <Home couple={couple} />
         <About couple={couple} />
         <Gift gifts={couple.gifts} />

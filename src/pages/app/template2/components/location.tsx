@@ -6,10 +6,13 @@ import { SectionTitle } from './section-title'
 export function Location() {
   return (
     <>
-      <div className="mb-32 mt-32 flex flex-col items-center justify-center" id='lcl'>
+      <div
+        className="mb-28 mt-32 flex flex-col items-center justify-center bg-[#ebe7d1]"
+        id="lcl"
+      >
         <SectionTitle title="Local da cerimônia" />
-        <div className="mt-16 flex w-[1500px] items-center gap-6">
-          <div className="w-1/2">
+        <div className="mb-16 mt-16 flex w-[1500px] items-center gap-6 bg-[#ebe7d1]">
+          <div className="w-1/2 bg-[#ebe7d1]">
             <img className="w-full rounded-[1rem]" src={igreja} alt="" />
           </div>
           <div className="w-1/2">
@@ -24,7 +27,7 @@ export function Location() {
         </div>
       </div>
 
-      <div className="mb-32 mt-32 flex flex-col items-center justify-center">
+      <div className="mb-32 mt-24 flex flex-col items-center justify-center">
         <SectionTitle title="Local da festa" />
         <div className="mt-16 flex w-[1500px] items-center gap-6">
           <div className="w-1/2">

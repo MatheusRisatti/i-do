@@ -40,7 +40,7 @@ export function Card({ gift }: CardProps) {
         <div className="flex items-center justify-center">
           <Dialog>
             <DialogTrigger asChild>
-              <button className="flex h-12 w-56 cursor-pointer items-center justify-center gap-3 rounded-[50px] border-[0.5px] border-solid border-black bg-transparent text-xl text-black duration-200 hover:border-none hover:bg-[#95f895] hover:text-white">
+              <button className="flex h-12 w-56 cursor-pointer items-center justify-center gap-3 rounded-[50px] border-[0.5px] border-solid border-black bg-transparent text-xl text-black duration-200 hover:border-none hover:bg-[#8ad18a] hover:text-white">
                 <ShoppingBag className="button-img" /> <span>Comprar</span>
               </button>
             </DialogTrigger>

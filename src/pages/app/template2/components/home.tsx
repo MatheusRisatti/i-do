@@ -1,7 +1,7 @@
 // import '../../../global.css'
 import { Couple } from '@/@types/couple'
 
-import { Counter } from '../../template3/components/counter'
+import { Counter } from './counter'
 import { Header } from './header'
 
 interface HomeProps {
@@ -19,9 +19,8 @@ export function Home({ couple }: HomeProps) {
         id="home"
       >
         <Header />
-
-        <div className="flex h-[100vh] flex-col items-center justify-center gap-4 text-white">
-          <h1 className="font-vbs text-7xl -tracking-tighter">
+        <div className="gap- flex h-full flex-col items-center justify-center gap-12 text-[#7F906C]">
+          <h1 className="font-rds text-8xl -tracking-tighter">
             {couple.wife.name} & {couple.husband.name}
           </h1>
           <Counter couple={couple} />
