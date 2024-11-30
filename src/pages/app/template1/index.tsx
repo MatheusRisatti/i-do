@@ -7,7 +7,7 @@ import { Gift } from './components/gift'
 import { Home } from './components/home'
 import { Location } from './components/location'
 import { Message } from './components/message'
-import { UpButton } from './components/up-button'
+import ScrollButton from './components/scroll-button'
 
 interface Template1Props {
   couple: Couple
@@ -19,8 +19,8 @@ export function Template1({ couple }: Template1Props) {
   return (
     <>
       <div className="bg-amber-50">
+        <ScrollButton />
         <Home couple={couple} />
-        {/* <UpButton /> */}
         <About couple={couple} />
         <Gift gifts={couple.gifts} />
         <Message />
