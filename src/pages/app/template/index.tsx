@@ -8,6 +8,7 @@ import { gifts } from '@/api/gifts'
 import { Template1 } from '../template1'
 import { Template2 } from '../template2'
 import { Template3 } from '../template3'
+import { Carregando } from './carregando'
 
 export function TemplatePage() {
   const { slug } = useParams<{ slug: string }>()
@@ -22,7 +23,7 @@ export function TemplatePage() {
     })
   }, [slug])
 
-  if (!couple) return <div>Carregando</div>
+  if (!couple) return <Carregando />
 
   if (couple.template_option === 1) return <Template1 couple={couple} />
   if (couple.template_option === 2) return <Template2 couple={couple} />
